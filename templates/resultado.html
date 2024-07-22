@@ -1,0 +1,10 @@
+{% extends "template.html" %}
+{% block content %}
+    <div class="qr-code-container">
+            <p>QR Code:</p>
+            <img src="{{ qrcode(frase, back_color='#efe9f4', fill_color='#1EA896') }}" alt="QR Code">
+    </div>
+    <a href="{{ url_for('index') }}">
+        <button class='btn Voltar'>Voltar</button>
+    </a>
+{% endblock %}
