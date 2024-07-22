@@ -1,0 +1,5 @@
+{% extends "template.html" %}
+{% block content %}
+    <h1> Gerando Qr-Code   </h1>
+    <img src="{{ qrcode('Eita mundo bão', box_size=20, border=10)  }}">
+{% endblock %}
